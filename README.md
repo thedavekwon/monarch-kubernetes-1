@@ -21,8 +21,6 @@ can then be used to connect and create a proc mesh on the workers.
 # Directory structure
 operator/ - Contains the operator code that can apply the CRD to a cluster
 
-images/ - Contains the Dockerfile for building the monarch worker image
-
 # How to build
 ```
 cd operator
@@ -52,7 +50,7 @@ make test-e2e
 ```
 
 # Examples
-Check out [hello_kubernetes_job.py](https://github.com/meta-pytorch/monarch/blob/main/examples/kubernetes/hello_kubernetes_job.py) for an example of how to use the KubernetesJob class.
+Check out [hello_kubernetes_job](https://github.com/meta-pytorch/monarch/tree/main/examples/kubernetes/hello_kubernetes_job) for an example of how to use the KubernetesJob class.
 
 # Common issues
 1. Ensure you have same version of Monarch installed on the workers as the controller. Monarch doesn't provide forward/backward compatibility for the controller/worker protocol.
